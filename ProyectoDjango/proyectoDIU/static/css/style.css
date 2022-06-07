@@ -3,6 +3,8 @@
   font-family: "sans-serif";
 }
 
+body { padding-top: 70px; }
+
 button{
   margin: 0px 5px;
 }
@@ -11,6 +13,7 @@ img{
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
 footer{
   left: 0;
   right: 0;
@@ -44,6 +47,10 @@ footer{
   color: #FFF;
   font-family: "Montserrat";
   font-size: 1rem;
+}
+
+.margin-top-20{
+  border-top: 20px;
 }
 
 .title{
