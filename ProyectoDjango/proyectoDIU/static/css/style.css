@@ -43,6 +43,12 @@ footer{
   filter: brightness(0) invert(1);
 }
 
+.logo{
+  width: 150px;
+  height: 44px;
+  margin: 0 0 0 0;
+}
+
 .footer-text{
   color: #FFF;
   font-family: "Montserrat";
