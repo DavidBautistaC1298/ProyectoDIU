@@ -22,12 +22,27 @@ footer{
 }
 
  /*Clases*/
+.icon-m{
+   width: 80px;
+   height: 80px;
+ }
 .red-color{
   background-color: #9F2241;
 }
 
 .darkred-color{
   background-color: #691C32;
+}
+
+.vertical-center{
+  margin: 200px 20px 200px 20px;
+}
+
+.align-icons{
+  display: flex;
+  justify-content: middle;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .icon{
@@ -55,6 +70,9 @@ footer{
   font-size: 1rem;
 }
 
+.margin-top-10{
+  margin-top: 10px;
+}
 .margin-top-20{
   border-top: 20px;
 }
