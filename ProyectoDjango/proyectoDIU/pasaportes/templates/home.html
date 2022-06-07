@@ -1,0 +1,232 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>menu principal</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
+  </head>
+  <body>
+
+    <!-- navbar -->
+    <div class="container-fluid darkgreen-color">
+      <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid">
+          <a href="#" class="navbar-brand white-text">Gobierno de México</a>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <button type="button" class="btn btn-outline-light white-text">Registrarse</button>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="btn btn-outline-light white-text">Iniciar sesión</button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- navbar end -->
+
+    <!-- contenido -->
+
+    <div class="container-fluid">
+      <img class="img-fluid mx-auto d-block" src="{% static 'img/Pasaporte.png' %}">
+      <p class="title">Revisa los pasos para obtener tu pasaporte</p>
+
+      <!-- Pasos para obtener pasaporte -->
+      <div class="card-group space">
+        <!-- Paso 1 -->
+        <div class="card darkgreen-color">
+          <div class="card-body">
+            <img class="img-fluid mx-auto d-block icon-white" src="{% static 'img/1.png' %}">
+            <p class="card-text white-text">
+              Entra a la página web:</p>
+            <p class="card-text white-text">
+              Identifica el tipo de pasaporte que requieres.
+            </p>
+          </div>
+        </div>
+        <!-- Paso 2 -->
+        <div class="card darkgreen-color">
+          <div class="card-body">
+            <img class="img-fluid mx-auto d-block icon-white" src="{% static 'img/2.png' %}">
+            <p class="card-text white-text">
+              Consulta los requisitos:</p>
+              <p class="card-text white-text">Solicita tu cita en línea,
+              cada tipo de pasaporte tiene requisitos que debes cumplir.</p>
+          </div>
+        </div>
+        <!-- Paso 3 -->
+        <div class="card darkgreen-color">
+          <div class="card-body">
+            <img class="img-fluid mx-auto d-block icon-white" src="{% static 'img/3.png' %}">
+            <p class="card-text white-text">
+              Realiza tu pago:</p>
+              <p class="card-text white-text">Te ofrecemos distintos métodos de pago con tarjeta de crédito, débito,
+                paypal, OXXO o en cajero.</p>
+          </div>
+        </div>
+        <!-- Paso 4 -->
+        <div class="card darkgreen-color">
+          <div class="card-body">
+            <img class="img-fluid mx-auto d-block icon-white" src="{% static 'img/4.png' %}">
+            <p class="card-text white-text">
+              Acude a las oficinas:</p>
+            <p class="card-text white-text">Escoge la delegación u oficina de tu preferencia.</p>
+          </div>
+        </div>
+        <!-- Paso 5 -->
+        <div class="card darkgreen-color">
+          <div class="card-body">
+            <img class="img-fluid mx-auto d-block icon-white" src="{% static 'img/5.png' %}">
+            <p class="card-text white-text">
+              Obten tu pasaporte:</p>
+            <p class="card-text white-text">Presenta la documentación requerida.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Trámites -->
+      <div class="card-group space">
+        <div class="card darkred-color">
+          <div class="card-body">
+            <img class="img-fluid mx-auto d-block icon-white" src="{% static 'img/Papeles.png' %}">
+            <h4 class="card-title white-text text-center">Realiza tu trámite de forma presencial</h4>
+          </div>
+        </div>
+        <div class="card red-color">
+          <div class="card-body">
+            <img class="img-fluid mx-auto d-block icon" src="{% static 'img/Mexico.png' %}">
+            <h4 class="card-title white-text text-center">Trámite para ciudadanos dentro del país</h4>
+          </div>
+        </div>
+        <div class="card darkgreen-color">
+          <div class="card-body">
+            <img class="img-fluid mx-auto d-block icon" src="{% static 'img/Tierra.png' %}">
+            <h4 class="card-title white-text text-center">Trámite para ciudadanos fuera del país</h4>
+          </div>
+        </div>
+      </div>
+    <!-- contenido end -->
+  </body>
+
+  <!-- footer -->
+  <footer class="text-center text-lg-start white-text darkgreen-color">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">
+              Gobierno de México
+            </h6>
+            <p>
+              Here you can use rows and columns to organize your footer
+              content. Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Enlaces</h6>
+            <p>
+              <a class="footer-text">Datos</a>
+            </p>
+            <p>
+              <a class="footer-text">Publicaciones</a>
+            </p>
+            <p>
+              <a class="footer-text">Portal de oblicaciones de transparencia</a>
+            </p>
+            <p>
+              <a class="footer-text">PNT</a>
+            </p>
+            <p>
+              <a class="footer-text">INAI</a>
+            </p>
+            <p>
+              <a class="footer-text">Alerta</a>
+            </p>
+            <p>
+              <a class="footer-text">Denuncia</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">
+              ¿Qué es gob.mx?
+            </h6>
+            <p class="footer-text">
+              Es el portal único de trámites, información y participación ciudadana.
+              <a class="footer-text">Leer más</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+          <hr class="w-100 clearfix d-md-none" />
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <p>
+              <a class="footer-text">Declaración de accesibilidad</a>
+            </p>
+            <p>
+              <a class="footer-text">Aviso de privacidad</a>
+            </p>
+            <p>
+              <a class="footer-text">Aviso de privacidad simplificado</a>
+            </p>
+            <p>
+              <a class="footer-text">Términos y condiciones</a>
+            </p>
+            <p>
+              <a class="footer-text">Política de seguridad</a>
+            </p>
+            <p>
+              <a class="footer-text">Marco jurídico</a>
+            </p>
+            <p>
+              <a class="footer-text">Mapa del sitio</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+
+      <hr class="my-3">
+
+      <!-- Section: Copyright -->
+      <section class="p-3 pt-0">
+        <div class="row d-flex align-items-center">
+          <!-- Grid column -->
+          <div class="col-md-7 col-lg-8 text-center text-md-start">
+            <!-- Copyright -->
+            <div class="p-3">
+              © 2022 Copyright:
+              <a class="text-white" href="https://mdbootstrap.com/">UNAM</a>
+            </div>
+            <!-- Copyright -->
+          </div>
+        </div>
+      </section>
+      <!-- Section: Copyright -->
+    </div>
+    <!-- Grid container -->
+  </footer>
+  <!-- Footer -->
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</html>
