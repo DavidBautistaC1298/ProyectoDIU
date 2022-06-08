@@ -8,3 +8,6 @@ def index(request):
 
 def login(request):
     return render(request, 'login.html')
+
+def tramitepresencial(request):
+    return render(request, 'tramitepresencial.html')
