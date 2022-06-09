@@ -11,3 +11,6 @@ def login(request):
 
 def tramitepresencial(request):
     return render(request, 'tramitepresencial.html')
+
+def subirarchivos(request):
+    return render(request, 'subirarchivos.html')

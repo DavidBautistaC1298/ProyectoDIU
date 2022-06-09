@@ -42,6 +42,10 @@ td{
 .center{
 
  }
+
+ .grey-color{
+   background-color: #D9D9D9;
+ }
 .red-color{
   background-color: #9F2241;
 }
@@ -91,6 +95,10 @@ td{
 }
 .margin-top-20{
   border-top: 20px;
+}
+
+.margin-lr-20{
+  margin: 20px 20px;
 }
 
 .title{
