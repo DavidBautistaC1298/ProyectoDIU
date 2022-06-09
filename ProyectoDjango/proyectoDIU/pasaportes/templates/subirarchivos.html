@@ -12,15 +12,19 @@
     <div class="container-fluid">
       <nav class="navbar fixed-top navbar-expand-md navbar-light darkgreen-color">
         <div class="container-fluid ">
-          <a href="#" class="navbar-brand white-text">
+          <a href="{% url 'index'%}" class="navbar-brand white-text">
             <img class="img-fluid mx-auto d-block logo" src="{% static 'img/Logo2.png' %}">
           </a>
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <button type="button" class="btn btn-outline-light white-text">Registrarse</button>
+              <button type="button" class="btn btn-outline-light white-text" onclick="location.href='{% url 'login'%}'">
+                Registrarse
+              </button>
             </li>
             <li class="nav-item">
-              <button type="button" class="btn btn-outline-light white-text">Iniciar sesión</button>
+              <button type="button" class="btn btn-outline-light white-text" onclick="location.href='{% url 'login'%}'">
+                Iniciar Sesión
+              </button>
             </li>
           </ul>
         </div>

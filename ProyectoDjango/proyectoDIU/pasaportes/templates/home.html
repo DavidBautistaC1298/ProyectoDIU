@@ -20,10 +20,14 @@
           </a>
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <button type="button" class="btn btn-outline-light white-text">Registrarse</button>
+              <button type="button" class="btn btn-outline-light white-text" onclick="location.href='{% url 'login'%}'">
+                Registrarse
+              </button>
             </li>
             <li class="nav-item">
-              <button type="button" class="btn btn-outline-light white-text">Iniciar sesión</button>
+              <button type="button" class="btn btn-outline-light white-text" onclick="location.href='{% url 'login'%}'">
+                Iniciar Sesión
+              </button>
             </li>
           </ul>
         </div>
@@ -96,18 +100,33 @@
           <div class="card-body">
             <img class="img-fluid mx-auto d-block icon-white" src="{% static 'img/Papeles.png' %}">
             <h4 class="card-title white-text text-center">Realiza tu trámite de forma presencial</h4>
+            <div class="container text-center">
+              <button type="button" class="btn green-color text-white space" onclick="location.href='{% url 'tramitepresencial'%}'">
+                Continúa leyendo
+              </button>
+            </div>
           </div>
         </div>
         <div class="card red-color">
           <div class="card-body">
             <img class="img-fluid mx-auto d-block icon" src="{% static 'img/Mexico.png' %}">
             <h4 class="card-title white-text text-center">Trámite para ciudadanos dentro del país</h4>
+            <div class="container text-center">
+              <button type="button" class="btn darkgreen-color text-white space" onclick="location.href='{% url 'tramitepresencial'%}'">
+                Continúa leyendo
+              </button>
+            </div>
           </div>
         </div>
         <div class="card darkgreen-color">
           <div class="card-body">
             <img class="img-fluid mx-auto d-block icon" src="{% static 'img/Tierra.png' %}">
             <h4 class="card-title white-text text-center">Trámite para ciudadanos fuera del país</h4>
+            <div class="container text-center">
+              <button type="button" class="btn darkred-color text-white space" onclick="location.href='{% url 'tramitepresencial'%}'">
+                Continúa leyendo
+              </button>
+            </div>
           </div>
         </div>
       </div>
