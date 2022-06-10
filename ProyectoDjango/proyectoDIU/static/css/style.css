@@ -22,9 +22,6 @@ footer{
   width: 100%;
 }
 
-td{
-  color: #FFF;
-}
 
  /*Clases*/
 .icon-s{
@@ -104,6 +101,16 @@ td{
 
 .margin-lr-20{
   margin: auto 20px auto 20px;
+}
+
+.nav-tabs .nav-link.active{
+  background-color: #10312B;
+  color: #fff;
+}
+
+.nav-tabs .nav-link{
+  background-color: #D9D9D9;
+  color: black;
 }
 
 .title{

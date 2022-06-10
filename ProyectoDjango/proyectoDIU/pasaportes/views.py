@@ -14,3 +14,9 @@ def tramitepresencial(request):
 
 def subirarchivos(request):
     return render(request, 'subirarchivos.html')
+
+def tramitenacional(request):
+    return render(request, 'tramitenacional.html')
+
+def tramiteinternacional(request):
+    return render(request, 'tramiteinternacional.html')
