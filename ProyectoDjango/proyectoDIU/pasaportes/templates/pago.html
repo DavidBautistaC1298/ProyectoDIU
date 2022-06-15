@@ -35,89 +35,96 @@
       </ul>
 
       <!-- Tab -->
-      <div class="tab-content border border-dark rounded-bottom grey-color">
+      <div class="tab-content border border-dark rounded-bottom grey-color mb-4">
         <!-- tab tarjeta -->
         <div class="tab-pane active" id="tarjeta">
-          <h4 class="ms-2 mt-4">Pago con tarjeta de débito o crédito</h4>
-            <p>Número de tarjeta: </p>
-            <div class="form-outline mb-4">
+          <h4 class="ms-4 mt-4">Pago con tarjeta de débito o crédito</h4>
+            <p class="mt-4 ms-4">Número de tarjeta: </p>
+            <div class="form-outline mt-4 ms-4 me-4 mb-4">
               <input type="number" id="form2Example11" class="form-control"
                 placeholder="0000 0000 0000 0000" />
             </div>
-            <p>CVV: </p>
-            <div class="form-outline mb-4">
+            <p class="mt-4 ms-4">CVV: </p>
+            <div class="form-outline mt-4 ms-4 me-4 mb-4">
               <input type="number" id="form2Example11" class="form-control"
                 placeholder="123" />
             </div>
 
-            <p>Titular de la tarjeta: </p>
-            <div class="form-outline mb-4">
+            <p class="mt-4 ms-4">Titular de la tarjeta: </p>
+            <div class="form-outline mt-4 ms-4 me-4 mb-4">
               <input type="text" id="form2Example11" class="form-control"
                 placeholder="Juan Pérez" />
             </div>
 
-            <button type="button" class="btn green-color text-white space" onclick="location.href='{% url 'pago'%}'">
-              Realizar pago
-            </button>
+            <div class="container text-center mb-4">
+              <button type="button" class="btn green-color text-white space" onclick="location.href='{% url 'pago'%}'">
+                Realizar pago
+              </button>
+            </div>
+
 
         </div>
         <!-- tab tarjeta end -->
 
         <!-- Tab transferencia -->
         <div class="tab-pane" id="transferencia">
-          <h4 class="ms-2 mt-4">Transferencia electrónica</h4>
+          <h4 class="ms-4 mt-4 mb-4">Transferencia electrónica</h4>
 
-          <p>Para realizar el pago a través de transferencia electrónica se debe depositar el monto a la cuenta:  </p>
-            
-          <p> 1234 5678 9101 1121 </p>
-          <p>Banco BVVA </p>
+          <p class="ms-4 mt-4 mb-4">Para realizar el pago a través de transferencia electrónica se debe depositar el monto a la cuenta:  </p>
 
-          <p>Con destinatario "Gobierno de la CDMX" </p>
+          <p class="ms-4 mt-4 mb-4"> 1234 5678 9101 1121 </p>
+          <p class="ms-4 mt-4 mb-4">Banco BVVA </p>
 
-          <p>Número de referencia: </p>
-          <div class="form-outline mb-4">
+          <p class="ms-4 mt-4 mb-4">Con destinatario "Gobierno de la CDMX" </p>
+
+          <p class="ms-4 mt-4 mb-4">Número de referencia: </p>
+          <div class="form-outline mt-4 ms-4 me-4 mb-4">
             <input type="number" id="form2Example11" class="form-control"
               placeholder="00000000" />
           </div>
 
-          <p>Clave de rastreo: </p>
-          <div class="form-outline mb-4">
+          <p class="ms-4 mt-4 mb-4">Clave de rastreo: </p>
+          <div class="form-outline mt-4 ms-4 me-4 mb-4">
             <input type="number" id="form2Example11" class="form-control"
               placeholder="000000000000000000000000" />
           </div>
 
-          <p>Folio de la operación: </p>
-          <div class="form-outline mb-4">
+          <p class="ms-4 mt-4 mb-4">Folio de la operación: </p>
+          <div class="form-outline mt-4 ms-4 me-4 mb-4">
             <input type="number" id="form2Example11" class="form-control"
               placeholder="0000000000" />
           </div>
 
-          <button type="button" class="btn green-color text-white space" onclick="location.href='{% url 'pago'%}'">
-            Realizar pago
-          </button>
-          
+          <div class="container text-center mb-4">
+            <button type="button" class="btn green-color text-white space" onclick="location.href='{% url 'pago'%}'">
+              Realizar pago
+            </button>
+          </div>
+
         </div>
         <!-- Tab transferencia end -->
 
         <!-- Tab paypal -->
         <div class="tab-pane" id="paypal">
-          <h4 class="ms-2 mt-4">Pago con Paypal</h4>
-            <p>Correo: </p>
-            <div class="form-outline mb-4">
+          <h4 class="ms-4 mt-4 mb-4">Pago con Paypal</h4>
+            <p class="ms-4 mt-4 mb-4">Correo: </p>
+            <div class="form-outline mt-4 ms-4 me-4 mb-4">
               <input type="email" id="form2Example11" class="form-control"
                 placeholder="correo@example.com" />
             </div>
 
-            <div class="form-outline mb-4">
-              <label class="form-label" for="form2Example22">Contraseña :</label>
+            <div class="form-outline mt-4 ms-4 me-4 mb-4">
+              <label class="form-label mb-4" for="form2Example22">Contraseña :</label>
               <input type="password" id="form2Example22" class="form-control" name="password"
               placeholder="Contraseña"/>
             </div>
 
-            <button type="button" class="btn green-color text-white space" onclick="location.href='{% url 'pago'%}'">
-              Realizar pago
-            </button>
-       
+            <div class="container text-center mb-4">
+              <button type="button" class="btn green-color text-white space" onclick="location.href='{% url 'pago'%}'">
+                Realizar pago
+              </button>
+            </div>
+
         </div>
       </div>
 
@@ -128,7 +135,7 @@
   </body>
 
   <!-- footer -->
-  <footer class="text-center text-lg-start white-text darkgreen-color">
+  <footer class="text-center text-lg-start white-text darkgreen-color mt-4">
     <!-- Grid container -->
     <div class="container p-4 pb-0">
       <!-- Section: Links -->
