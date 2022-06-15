@@ -17,6 +17,14 @@
             <img class="img-fluid mx-auto d-block logo" src="{% static 'img/Logo2.png' %}">
           </a>
           <ul class="navbar-nav ml-auto">
+            {% if user.is_authenticated %}
+              {{user.username}}
+              <li class="nav-item">
+                <button type="button" class="btn btn-outline-light white-text">
+                  Mi Cuenta
+                </button>
+              </li>
+            {% else %}
             <li class="nav-item">
               <button type="button" class="btn btn-outline-light white-text" onclick="location.href='{% url 'registro'%}'">
                 Registrarse
@@ -27,6 +35,7 @@
                 Iniciar Sesión
               </button>
             </li>
+            {% endif %}
           </ul>
         </div>
       </nav>
