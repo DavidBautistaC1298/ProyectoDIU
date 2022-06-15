@@ -12,5 +12,6 @@ path('registro', views.registro, name='registro'),
 path('tramitepresencial', views.tramitepresencial, name='tramitepresencial'),
 path('subirarchivos', views.subirarchivos, name='subirarchivos'),
 path('tramitenacional', views.tramitenacional, name='tramitenacional'),
-path('tramiteinternacional', views.tramiteinternacional, name='tramiteinternacional')
+path('tramiteinternacional', views.tramiteinternacional, name='tramiteinternacional'),
+path('pago',views.pago,name='pago')
 ]

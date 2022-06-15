@@ -39,3 +39,6 @@ def tramitenacional(request):
 
 def tramiteinternacional(request):
     return render(request, 'tramiteinternacional.html')
+
+def pago(request):
+    return render(request, 'pago.html')
